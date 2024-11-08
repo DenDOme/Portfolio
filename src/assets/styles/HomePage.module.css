@@ -1,0 +1,95 @@
+.grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto 200px auto;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    /* height: 520px; */
+}
+
+.block {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: #191919;
+}
+
+.block1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    height: 145px;
+}
+
+.block2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    height: 360px;
+    width: 285px;
+    background: url('../images/skyImg.jpg');
+    background-size: cover;
+}
+
+.block3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1;
+    grid-row: 2;
+    width: 285px;
+    height: 145px;
+    background-color: #2B9492;
+}
+
+.block4 {
+    grid-column: 2;
+    grid-row: 2;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.block5 {
+    margin-top: 160px;
+    grid-row: 2 / span 3;
+    grid-column: 1;
+    height: 200px;
+}
+
+.block6 {
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    height: 145px;
+    width: 500px;
+}
+
+.block__title {
+    padding: 15px 0 0 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.block__name {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.block__header {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.block__img {
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 0 auto;
+}
